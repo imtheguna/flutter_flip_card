@@ -79,14 +79,21 @@ import 'package:flutter_flip_card/flutter_flip_card.dart';
         ),
 ```
 
-## Project Created & Maintained By
+#### Project Created & Maintained By
 
-### Gunanithi CS
+#### Gunanithi
 
 Passionate #Flutter, #Android Developer. #UI Designer.
 
 
-<a href="https://www.linkedin.com/in/gunanithi-cs/"><img src="https://github.com/aritraroy/social-icons/blob/master/linkedin-icon.png?raw=true" width="60"></a>
+<a href="https://www.linkedin.com/in/imtheguna/"><img src="https://raw.githubusercontent.com/aritraroy/social-icons/master/linkedin-icon.png" alt="linkedin"  width="60"></a> <a href="https://medium.com/@imtheguna"><img src="https://raw.githubusercontent.com/aritraroy/social-icons/master/medium-icon.png" alt="medium" width="60"></a>
+
 ## Notes
 Please [open an issue](https://github.com/imtheguna/flutter_flip_card/issues) if you find any bugs.
+
+#### Donate
+
+You like the package ? Buy me a coffee :)
+
+<a href="https://www.buymeacoffee.com/imtheguna" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
