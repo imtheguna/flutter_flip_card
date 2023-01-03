@@ -56,6 +56,8 @@ import 'package:flutter_flip_card/flutter_flip_card.dart';
     GestureFlipCard(
             animationDuration: const Duration(milliseconds: 300),
             axis: FlipAxis.horizontal,
+            controller:cong // used to ccontrol the Gesture flip programmatically
+            enableController : false // if [True] if you need flip the card using programmatically
             frontWidget: Center(
                 child: Container(
                   width: 300,
