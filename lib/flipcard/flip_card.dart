@@ -26,16 +26,29 @@ class FlipCard extends StatefulWidget {
 
   /// [animationDuration] The amount of milliseconds a turn animation will take.
   final Duration animationDuration;
-  const FlipCard(
-      {Key? key,
-      this.onTapFlipping = false,
-      required this.frontWidget,
-      required this.backWidget,
-      required this.controller,
-      this.axis = FlipAxis.vertical,
-      required this.rotateSide,
-      this.animationDuration = const Duration(milliseconds: 800)})
-      : super(key: key);
+
+  /// [disableSplashEffect] The option for disable Inkwell widget's splash effect.
+  final bool disableSplashEffect;
+
+  /// [splashColor] The option for Inkwell widget's splashColor.
+  final Color? splashColor;
+
+  /// [focusColor] The option for Inkwell widget's focusColor.
+  final Color? focusColor;
+
+  const FlipCard({
+    Key? key,
+    this.focusColor,
+    this.splashColor,
+    this.onTapFlipping = false,
+    this.disableSplashEffect = false,
+    required this.frontWidget,
+    required this.backWidget,
+    required this.controller,
+    this.axis = FlipAxis.vertical,
+    required this.rotateSide,
+    this.animationDuration = const Duration(milliseconds: 800),
+  }) : super(key: key);
 
   @override
   FlipCardState createState() => FlipCardState();
@@ -101,6 +114,11 @@ class FlipCardState extends State<FlipCard> with TickerProviderStateMixin {
               : () {
                   flipCardController.state!.filpCard();
                 },
+          splashColor: widget.splashColor,
+          focusColor: widget.focusColor,
+          overlayColor: widget.disableSplashEffect
+              ? null
+              : MaterialStateProperty.all(Colors.transparent),
           child: Transform(
               alignment: Alignment.center,
               transform: transform,

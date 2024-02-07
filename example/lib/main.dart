@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
               controller: cong1,
               axis: FlipAxis.vertical,
               enableController: true,
-              animationDuration: const Duration(milliseconds: 1000),
+              animationDuration: const Duration(seconds: 3),
               frontWidget: Center(
                 child: Container(
                   height: 200,
@@ -124,7 +124,6 @@ class _MyAppState extends State<MyApp> {
               onPressed: () {
                 // Flip the card programmatically
                 con1.flipcard();
-                cong.flipcard();
               },
             ),
             const SizedBox(
@@ -135,6 +134,8 @@ class _MyAppState extends State<MyApp> {
             ),
             FlipCard(
               rotateSide: RotateSide.right,
+              disableSplashEffect: false,
+              splashColor: Colors.orange,
               onTapFlipping: true,
               axis: FlipAxis.vertical,
               controller: con,
