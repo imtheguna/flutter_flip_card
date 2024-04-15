@@ -6,12 +6,12 @@ class FlipCardController {
   FlipCardState? state;
 
   /// Flip the card
-  Future flipcard() async => state?.filpCard();
+  Future flipcard() async => state?.flipcard();
 }
 
 class GestureFlipCardController {
   FlipCardState1? state;
 
   /// Flip the card
-  Future flipcard() async => state?.gesturefilpCard();
+  Future flipcard() async => state?.gestureflipCard();
 }
