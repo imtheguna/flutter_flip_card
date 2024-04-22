@@ -134,7 +134,7 @@ class _MyAppState extends State<MyApp> {
             ),
             FlipCard(
               rotateSide: RotateSide.right,
-              disableSplashEffect: false,
+              disableSplashEffect: true,
               splashColor: Colors.orange,
               onTapFlipping: true,
               axis: FlipAxis.vertical,

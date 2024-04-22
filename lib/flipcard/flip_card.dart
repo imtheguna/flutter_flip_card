@@ -75,7 +75,7 @@ class FlipCardState extends State<FlipCard> with TickerProviderStateMixin {
   }
 
   ///Flip the card
-  Future filpCard() async {
+  Future flipCard() async {
     if (animationController.isAnimating) return;
     isFront = !isFront;
     await animationController.forward(from: 0).then((value) => anglePlus = pi);
@@ -112,7 +112,7 @@ class FlipCardState extends State<FlipCard> with TickerProviderStateMixin {
           onTap: widget.onTapFlipping == false
               ? null
               : () {
-                  flipCardController.state!.filpCard();
+                  flipCardController.state!.flipCard();
                 },
           splashColor: widget.splashColor,
           focusColor: widget.focusColor,

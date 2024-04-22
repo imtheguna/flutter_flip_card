@@ -1,3 +1,6 @@
+## 0.0.6
+
+* [issue4 opend by vicenterusso ] Fix typos
 
 ## 0.0.5
 

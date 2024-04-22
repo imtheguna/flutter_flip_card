@@ -100,7 +100,7 @@ class FlipCardState1 extends State<GestureFlipCard>
   }
 
   double anglePlus = 0;
-  Future gesturefilpCard() async {
+  Future gestureflipCard() async {
     if (widget.enableController) {
       if (widget.axis == FlipAxis.horizontal) {
         strtH();
