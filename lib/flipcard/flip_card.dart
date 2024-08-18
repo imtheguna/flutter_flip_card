@@ -96,7 +96,7 @@ class FlipCardState extends State<FlipCard> with TickerProviderStateMixin {
         late Matrix4 transform;
         late Matrix4 transformForBack;
         if (isFront) angle += anglePlus;
-        if (widget.axis == FlipAxis.horizontal) {
+        if (widget.axis == FlipAxis.vertical) {
           transform = Matrix4.identity()
             ..setEntry(3, 2, 0.001)
             ..rotateX(angle);
